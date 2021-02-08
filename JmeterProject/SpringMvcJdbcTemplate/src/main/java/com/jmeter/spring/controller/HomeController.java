@@ -25,7 +25,7 @@ public class HomeController {
 	 * which gets incremented by 1 with every request
 	*/  
 	@RequestMapping(value="/")
-	public ModelAndView listContact(ModelAndView model) throws IOException{
+	public ModelAndView numList(ModelAndView model) throws IOException{
 		List<NumClass> numList = numDAO.list();
 		model.addObject("numList", numList);
 		model.setViewName("home");		
